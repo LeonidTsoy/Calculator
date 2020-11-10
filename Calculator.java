@@ -1,10 +1,8 @@
 package Calculator;
-
 import javax.swing.*;
 import java.awt.GridLayout;
 import java.awt.BorderLayout;
 import javax.swing.JFrame;
-
 
 public class Calculator {
     JButton button0=new JButton("0");
@@ -30,7 +28,6 @@ public class Calculator {
     JTextField displayField = new JTextField(30);
 
     Calculator(){
-
         BorderLayout bl = new BorderLayout();
         windowContent.setLayout(bl);
         windowContent.add("North",displayField);
@@ -50,9 +47,7 @@ public class Calculator {
         p1.add(button0);
         p1.add(buttonEqual);
         p1.add(buttonC);
-
-
-
+        
         windowContent.add("Center",p1);
         JPanel p2 = new JPanel();
         GridLayout gl2 =new GridLayout(4,1);
