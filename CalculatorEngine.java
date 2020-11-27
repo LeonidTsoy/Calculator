@@ -26,10 +26,7 @@ public class CalculatorEngine implements ActionListener {
         parent.displayField.setText(dispFieldText +
                 clickedButtonLabel);
 
-        if (clickedButton == parent.buttonSign) {
-            currentResult = displayValue * -1;
-            parent.displayField.setText("" + currentResult);
-        }
+
         if (clickedButton == parent.buttonC) {
             currentResult = 0;
             displayValue = 0;
@@ -48,9 +45,6 @@ public class CalculatorEngine implements ActionListener {
         } else if (clickedButton == parent.buttonDivide) {
             Calculate();
             lastCommand = '/';
-        } else if (clickedButton == parent.buttonSquare) {
-            Calculate();
-            lastCommand = '^';
         }
 
         if (clickedButton == parent.buttonEqual) {
